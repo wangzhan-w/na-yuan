@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<meta charset="utf-8" />
+		<meta name="keywords" content="" />
+		<meta name="description" content="" />
+		<link rel="shortcut icon" href="img/logo.png" />
+		<script src="js/nsw_index.js" type="text/javascript" charset="utf-8"></script>
+		<title></title>
+	</head>
+	<body>
+<header>
+			
+			<div id="top-menu">
+				<div class="top-mid">
+					<div class="logo-1">
+						<img src="img/logo.png"/>
+					</div>
+					<div class="jianxin">
+						<img src="img/jianxintang.png"/>
+					</div>
+					<div class="nav-sy">
+						<ul class="active">
+							<li >
+								<a href="index.html" >网站首页</a></li>
+								<li><a href="#">丹参</a></li>
+								<li>	<a href="#">产品中心</a></li>
+								<li><a href="#">资讯中心</a></li>
+								<li><a href="#">关于我们</a></li>
+								<li><a href="#">联系我们</a></li>
+						</ul>
+					</div>
+					<div class="oinput">
+						<input type="text" name="" id="" value="请输入关键词" />
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="clearfix"></div>
+
+		<!--logol页面开始-->
+		
+
+
+
+
+
+		<!-- 本例子代码 开始 ------------------------------------------->
+			
+
+		<script type="text/javascript">
+			var navs = document.getElementById("navC").getElementsByTagName("a");
+			for (var i = 0; i < navs.length; i++) {
+				var getLink = navs[i].getAttribute("href");
+				var getUrl = document.location.href;
+				if (getUrl.indexOf(getLink) != -1 && i !== 0) {
+					navs[i].className = "active";
+					navs[0].className = "";
+				} else if (getUrl.indexOf(getLink) != -1 && i == 0) {
+					navs[i].className = "active";
+				}
+			}
+		</script>
+		<!--banner-->
+	<div class="fullSlide">
+			<div class="bd">
+				<ul>
+					<li>
+						<a href="" title="键心堂中药饮片" class="banner" style="position: relative;
+		left: 50%; margin-left: -960px; width: 1920px;">
+		<img src="img/banner1-gai.jpg"></a>
+
+					</li>
+					
+				</ul>
+			</div>
+			
+		</div>
+		<!--banner结束-->
+
+
+
+		<!-- 搜索 -->
+		
+		<!--搜索结束-->
+		<!-- 产品中心 -->
+		<div class="current">
+			<p>您现在所在位置：</p>
+			<a href="#">首页>></a>
+			<a href="#">产品中心</a>
+		</div>
+		<div class="ca"></div>
+		<div class="project_center"> 
+			<div class="tabPanel clearfix12">
+				<div class="prj_cta1">
+					<div class="prjrtitel">
+						<p class="prjrtitel1">关于我们</p>
+						<p class="prjrtitel2">ABOUTUS</p>
+					</div>
+					<ul class="prj_cta2">
+						<li class="hit">
+							<div class="prj_cta3">
+								<a href="#">
+									企业风采&nbsp;&nbsp;>
+								</a>
+							</div>
+						</li>
+						<li>
+							<div class="prj_cta3">
+								<a href="#">
+									案例分类&nbsp;&nbsp;>
+								</a>
+							</div>
+						</li>
+						<li>
+							<div class="prj_cta3">
+								<a href="#">
+									案例分类&nbsp;&nbsp;>
+								</a>
+							</div>
+						</li>
+						<li>
+							<div class="prj_cta3">
+								<a href="#">
+									案例分类&nbsp;&nbsp;>
+								</a>
+							</div>
+						</li>
+						<li>
+							<div class="prj_cta3">
+								<a href="#">
+									案例分类&nbsp;&nbsp;>
+								</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="panes_pro">
+					<div class="panes clearfix12">
+						<div class="pane clearfix12" style="display:block;">
+							<div class="yszm_caser">
+								<div class="yszm_caser1">
+									<a href="#"><img src="img/00023.jpg" alt=""></a>
+								</div>
+								<div class="yszm_caser2">
+									<p class="yszm_caser3"><a href="#">查看详情</a></p>
+								</div>
+							</div>
+							<div class="yszm_caser">
+								<div class="yszm_caser1">
+									<a href="#"><img src="img/00021.jpg" alt=""></a>
+								</div>
+								<div class="yszm_caser2">
+									<p class="yszm_caser3"><a href="#">查看详情</a></p>
+								</div>
+							</div>
+
+
+											<!--页码-->
+							<div class="pagenation">
+								<a href="#">共200条记录</a>
+								<a href="#">页数：212</a>
+								<a href="#" class="a1 btn">&lt;上一页</a>
+								<a class="active1">1</a>
+								<a href="#">2</a>
+								<a href="#">3</a>
+								<a href="#" class="a1 btn">下一页&gt; </a>
+							</div>
+				<!--页码结束-->
+
+						</div>
+						<div class="pane clearfix12"></div>
+						<div class="pane clearfix12"></div>
+						<div class="pane clearfix12"></div>
+						<div class="pane clearfix12"></div>
+					</div> 
+				</div>
+	
+			</div>
+		</div>
+		<script type="text/javascript">
+		$(function(){	
+			$('.tabPanel ul li').click(function(){
+				$(this).addClass('hit').siblings().removeClass('hit');
+				$('.panes>div:eq('+$(this).index()+')').show().siblings().hide();	
+			})
+		})
+		</script>
+
+		       <!-- 产品推荐 -->
+					   <div class="project_info">
+						<div class="tjxw-title">推荐案例</div>
+						<hr>
+						<div class="project_in1 clearfix12">
+							<div class="project_in2">
+								<div class="project_in3">
+									<img src="img/00021.jpg" alt="">
+								</div>
+								<div class="project_in4">
+									<a href="#">查看详情</a> 
+								</div>
+							</div>
+							<div class="project_in2">
+								<div class="project_in3">
+									<img src="images/56456_03.jpg" alt="">
+								</div>
+								<div class="project_in4">
+									<a href="#">查看详情</a> 
+								</div>
+							</div>
+							<div class="project_in2">
+								<div class="project_in3">
+									<img src="images/56456_03.jpg" alt="">
+								</div>
+								<div class="project_in4">
+									<a href="#">查看详情</a> 
+								</div>
+							</div>
+							<div class="project_in2">
+								<div class="project_in3">
+									<img src="images/56456_03.jpg" alt="">
+								</div>
+								<div class="project_in4">
+									<a href="#">查看详情</a> 
+								</div>
+							</div>
+						</div>
+					</div>
+				<!--推荐新闻-->
+					  <div class="news-back">
+	<div class="wz">
+		<h3>新闻动态</h3>
+	<p>NEWS INFORMATION</p>
+	</div>
+	
+	<div class="new">
+		<div class="new-01">
+			<h5>公司新闻</h5>
+				<a href="new.html">2020-07-03   山东键心堂中药饮片...</a><br />
+				<a href="new.html">2020-07-03   山东键心堂中药饮片...</a><br />
+				<a href="new.html">2020-07-03   山东键心堂中药饮片...</a>
+		
+		</div>
+		<div class="new-02">
+			<img src="img/news-pic1.png" style="width: 400px;height: 200px;"/>
+		</div>
+		<div class="new-03">
+			<h5>行业资讯</h5>
+				<a href="new.html">2020-07-03   山东键心堂中药饮片...</a><br />
+				<a href="new.html">2020-07-03   山东键心堂中药饮片...</a><br />
+				<a href="new.html">2020-07-03   山东键心堂中药饮片...</a>
+		</div>
+		<div class="new-04">
+			<img src="img/news-pic2.png" style="width: 400px;height: 200px;"/>
+		</div>
+		<div class="new-05">
+			<h5>常见问答</h5>
+				<a href="new.html">2020-07-03   山东键心堂中药饮片...</a><br />
+				<a href="new.html">2020-07-03   山东键心堂中药饮片...</a><br />
+				<a href="new.html">2020-07-03   山东键心堂中药饮片...</a>
+		</div>
+		<div class="new-06">
+			<img src="img/news-pic3.png" style="width: 400px;height: 200px;"/>
+		</div>
+	</div>
+</div>
+
+	
+<div class="nav">
+			<div class="nav_z">
+					<ul>
+					<li >
+								<a href="index.html" >网站首页</a></li>
+								<li><a href="#">丹参</a></li>
+								<li>	<a href="#">产品中心</a></li>
+								<li><a href="#">资讯中心</a></li>
+								<li><a href="#">关于我们</a></li>
+								<li><a href="#">联系我们</a></li>
+				</ul>
+			</div>
+		</div>
+		<!--主导航结束-->
+		<!--版尾-->
+		<div class="bw_z">
+			<div class="bw_logo">
+				<img src="img/logo.png" title="键心堂中药饮片" />
+			</div>
+			<div class="xx">
+				<p> 山东键心堂中药饮片有限公司 &nbsp;&nbsp;版权所有&nbsp;&nbsp; </p>
+				<p>备案号：33010002000036号</p>
+				<p>联系电话：15206902999</p>
+				<p>公司地址：山东省德州市经济技术开发区天衢路2299号 </p>
+				
+			</div>
+		
+			<div class="ewm_bj">
+				<img src="img/ewm.png" />
+				
+			</div>
+		</div>
+
+
+	</body>
+	<script src="js/jquery.SuperSlide.2.1.1.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/lrtk.js" type="text/javascript" charset="utf-8"></script>
+</html>
